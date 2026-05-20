@@ -1,0 +1,94 @@
+@charset "UTF-8";
+
+@font-face {
+    font-family: "Megamax";
+    src: url(../../static/fonts/MegamaxJonathanToo-YqOq2.ttf) format('truetype');
+}
+
+:root {
+    --fonte: "Megamax";
+}
+
+* {
+    margin: 0;
+    padding: 0;
+
+    font-family: var(--fonte);
+
+    box-sizing: border-box;
+}
+
+
+#flex
+
+/* estilização dos três botôes */
+    {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 98vh;
+
+}
+
+#flex2 {
+    display: flex;
+    justify-content: space-around;
+    width: 70%;
+
+}
+
+
+
+
+
+/* ------------------------------------------------------------- */
+/* ESTILIZAÇÂO DA IMAGEM DE FUNDO */
+/* ------------------------------------------------------------- */
+
+body {
+    background-image: url(../../static/imagens/imagem-de-fundo.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+
+}
+
+
+/* ------------------------------------------------------------- */
+/* ESTILIZAÇÂO DOS BOTÕES */
+/* ------------------------------------------------------------- */
+a {
+    text-decoration: none;
+    padding: 20px;
+    color: black;
+    font-size: 2em;
+    background-color: rgb(255, 255, 255);
+    border-radius: 30px;
+    border: 5px solid black;
+    /* 
+    box-shadow: 10px 20px 5px 0px rgba(0,0,0,0.3);
+ */
+    transition: background-color 0.3s ease, transform 0.2s ease;
+
+}
+
+
+
+
+
+
+/* ------------------------------------------------------------- */
+/* ESTILIZAÇÂO DOS BOTÕES (HOVER, ANIMAÇÔES)*/
+/* ------------------------------------------------------------- */
+a:hover {
+    background-color: rgb(128, 128, 128);
+    color: white;
+    border: 5px solid white;
+    transform: scale(1.1);
+
+
+}
+a:active {
+    transform: scale(0.95); /* Encolhe levemente ao clicar */
+
+}
