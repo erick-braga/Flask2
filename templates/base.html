@@ -11,13 +11,16 @@
 
 <body>
     <h1 id="titulo">DataBASE GAMES</h1>
+    {% block conteudo %}
     <div id="flex">
         <div id="flex2">
-            <div><a href="">Popular</a></div>
-            <div><a href="">Aventura</a></div>
-            <div><a href="">Recentes</a></div>
+            <div><a href="popular.html">Popular</a></div>
+            <div><a href="aventura.html">Aventura</a></div>
+            <div><a href="recentes.html">Recentes</a></div>
         </div>
     </div>
+    
+    {% endblock %}
 </body>
 
 </html>
