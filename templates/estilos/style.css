@@ -8,7 +8,10 @@
 :root {
     --fonte: "Megamax";
 }
-
+    ::-webkit-scrollbar {
+        width: 0;
+        height: 0;
+    }
 * {
     margin: 0;
     padding: 0;
@@ -26,12 +29,13 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 98vh;
+    height: 76vh;
 
 }
 
 #flex2 {
     display: flex;
+    flex-direction: row-reverse;
     justify-content: space-around;
     width: 70%;
 
@@ -46,6 +50,7 @@
 /* ------------------------------------------------------------- */
 
 body {
+    height: 91vh;
     background-image: url(../../static/imagens/imagem-de-fundo.jpg);
     background-repeat: no-repeat;
     background-size: cover;
@@ -59,9 +64,9 @@ body {
 /* ------------------------------------------------------------- */
 a {
     text-decoration: none;
-    padding: 20px;
+    padding: 40px;
     color: black;
-    font-size: 2em;
+    font-size: 3em;
     background-color: rgb(255, 255, 255);
     border-radius: 30px;
     border: 5px solid black;
@@ -81,7 +86,7 @@ a {
 /* ESTILIZAÇÂO DOS BOTÕES (HOVER, ANIMAÇÔES)*/
 /* ------------------------------------------------------------- */
 a:hover {
-    background-color: rgb(128, 128, 128);
+    background-color: rgb(0, 0, 0);
     color: white;
     border: 5px solid white;
     transform: scale(1.1);
@@ -92,3 +97,41 @@ a:active {
     transform: scale(0.95); /* Encolhe levemente ao clicar */
 
 }
+
+
+
+/* ------------------------------------------------------------- */
+/* ESTILIZAÇÃO DO TÍTULO */
+/* ------------------------------------------------------------- */
+    #titulo {
+       text-align: center; 
+       margin-top: 100px;
+       font-size: 6em;
+       
+       animation: piscarRGB 5s linear infinite;
+    }
+
+    @keyframes piscarRGB {
+        0% {
+          color: rgb(0, 0, 0); /* Vermelho */
+          opacity: 1;
+        }
+        25% {
+          color: rgb(0, 0, 0); /* Amarelo */
+          opacity: 0.1; /* Fica mais escuro/invisível */
+        }
+        50% {
+          color: rgb(0, 0, 0); /* Verde */
+          opacity: 1;
+        }
+        75% {
+          color: rgb(34, 34, 161); /* Azul */
+          opacity: 0.2;
+        }
+        100% {
+          color: rgb(145, 179, 223); /* Magenta */
+          opacity: 1;
+        }
+      }
+
+
